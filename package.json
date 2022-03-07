@@ -1,12 +1,12 @@
 {
   "name": "nftbot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Checking floor prices on nft market places such as OpenSea | MagicEden",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Starbox4#6880 | scarfacë#0821 | zephyr#0919",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^13.6.0"
