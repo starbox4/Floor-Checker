@@ -38,4 +38,4 @@ client.on('message', message =>{
 
 
 
-client.login('OTUwNTEwODE1NDgyNjQyNDQy.YiZ-Lg.ptPjXP5BTrJvQApf0_kYYHUsbyk');
+client.login(/*check discord for token*/);
