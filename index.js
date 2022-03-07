@@ -1,4 +1,11 @@
 const { Client, Intents } = require('discord.js');
+const axios = require('axios');
+const cheerio = require('cheerio');
+const { message } = require('prompt');
+const sdk = require('api')('@opensea/v1.0#p10gwr4l02q167c');
+const Moralis = require('moralis');
+
+
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
@@ -7,8 +14,10 @@ const prefix = '/';
 
 
 client.once('ready', () =>{
-    console.log("YO!");
+    console.log("Bot is Online");
 });
+
+
 
 
 
@@ -17,10 +26,19 @@ client.on('message', message =>{
     const args = message.content.slice(prefix.length).split(/ + /);
     const command = args.shift().toLocaleLowerCase();
 
+    let info;
     if(command === 'bluechip'){
-        //code here
+        bluechip();
     }
 });
+
+
+
+
+async function bluechip() {
+//todo
+
+}
 
 
 
