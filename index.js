@@ -26,14 +26,14 @@ client.on('message', message =>{
     const args = message.content.slice(prefix.length).split(/ + /);
     const command = args.shift().toLocaleLowerCase();
 
-    if(command === 'floor'){
-      floor();
+    if(command === 'info'){
+      info();
     }
 });
 
 
 
-async function floor(){
+async function info(){
   let floorPrice = 0;
   axios.get('https://api.opensea.io/api/v1/collection/')
   .then(response => {
